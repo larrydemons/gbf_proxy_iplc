@@ -1,7 +1,6 @@
 之前试过吧里以前帖子的流量转发啊，专线+酸酸乳啊，都不太好使，前前后后花了半年冤枉钱后 前几天发现了
 https://github.com/Frizz925/gbf-proxy
 就体会到了凌晨的acgp的速度(没在本土玩过 所以不知道是不是本土网速)
-
 准备工作有：一条沪日iplc专线(挑与本土ping最低的，腾讯和阿里云也可以，选弹性公网ip的时候用加速那个选项)， 一个日本vps(挑与你的iplc ping最低的)
 所以从我电脑到iplc服务器延时是12ms，iplc服务器到日本vps是30ms，日本vps到gbf机房是1.几ms
 效果视频：https://www.bilibili.com/video/BV1zf4y1z7CB
