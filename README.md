@@ -5,7 +5,7 @@ https://github.com/Frizz925/gbf-proxy
 所以从我电脑到iplc服务器延时是12ms，iplc服务器到日本vps是30ms，日本vps到gbf机房是1.几ms
 效果视频：https://www.bilibili.com/video/BV1zf4y1z7CB
 搭建视频：https://www.bilibili.com/video/BV1oU4y1H79t
-================================================
+
 先搞vps部分
 这里用的centos7
 ```
@@ -29,7 +29,6 @@ tmux a -t gbf-proxy
 然后ctrl+b 退出窗口 就可以断开链接了
 还有可以用docker 启动多个gbf-proxy 再用nginx来做负载均衡，今天先不说了
 
-================================================
 iplc nat部分
 如果你的iplc只是有流量转发功能
 那就是在设置那边添加
@@ -44,7 +43,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBack
 一键设置iptable，选1安装完后 再运行选4添加规则
 和上面一样 也会有目标ip 目标断开 本地端口 这些都一样 不过这儿会有一个本地ip 就是iplc给你分配你机子的内网ip，用ifconfig查 再选tcp+udp
 然后这个情况下得本地端口因为还是内网的 需要映射给公网端口，会有个地方添加nat规则
-=================================================
+
 两个都准备好后就用chrome的switchyomega 设置
 按照图1里那样设置
 server就是你iplc服务商的ip地址，prot就是映射后的公网端口
@@ -55,8 +54,6 @@ server是日本服务器ip
 然后图2 设置打钩的规则
 就结束了
 
-
-==================================================================================================================
 补上docker 部署gbf—proxy 然后利用nginx进行负载均衡
 在机子上先装上docker 我这边是centos7
 ```
